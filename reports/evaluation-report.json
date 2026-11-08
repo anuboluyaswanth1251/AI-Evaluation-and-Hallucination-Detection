@@ -1,0 +1,121 @@
+{
+    "project": "AI Evaluation and Hallucination Detection System",
+    "generatedAt": "2026-11-08T06:17:33.516Z",
+    "totalModelsEvaluated": 3,
+    "ranking": [
+        {
+            "rank": 1,
+            "model": "Model A",
+            "overallScore": 100,
+            "contradictions": 0,
+            "reviewStatus": "HIGH TEXTUAL OVERLAP"
+        },
+        {
+            "rank": 2,
+            "model": "Model C",
+            "overallScore": 85.25,
+            "contradictions": 0,
+            "reviewStatus": "HIGH TEXTUAL OVERLAP"
+        },
+        {
+            "rank": 3,
+            "model": "Model B",
+            "overallScore": 2,
+            "contradictions": 1,
+            "reviewStatus": "CONTRADICTION DETECTED"
+        }
+    ],
+    "detailedResults": [
+        {
+            "model": "Model A",
+            "answer": "New Delhi is the capital of India.",
+            "answerSimilarity": 100,
+            "semanticBaseline": 100,
+            "evidenceOverlap": 100,
+            "exactMatch": true,
+            "overallScore": 100,
+            "contradictionCount": 0,
+            "insufficientEvidenceCount": 0,
+            "reviewStatus": "HIGH TEXTUAL OVERLAP",
+            "claims": [
+                {
+                    "claim": "New Delhi is the capital of India",
+                    "retrievedEvidence": "New Delhi is the capital of India.",
+                    "overlapScore": 100,
+                    "matchingWords": [
+                        "new",
+                        "delhi",
+                        "is",
+                        "the",
+                        "capital",
+                        "of",
+                        "india"
+                    ],
+                    "contradiction": false,
+                    "status": "HIGH TEXTUAL OVERLAP"
+                }
+            ],
+            "rank": 1
+        },
+        {
+            "model": "Model C",
+            "answer": "The capital city of India is New Delhi.",
+            "answerSimilarity": 87.5,
+            "semanticBaseline": 80,
+            "evidenceOverlap": 87.5,
+            "exactMatch": false,
+            "overallScore": 85.25,
+            "contradictionCount": 0,
+            "insufficientEvidenceCount": 0,
+            "reviewStatus": "HIGH TEXTUAL OVERLAP",
+            "claims": [
+                {
+                    "claim": "The capital city of India is New Delhi",
+                    "retrievedEvidence": "New Delhi is the capital of India.",
+                    "overlapScore": 88,
+                    "matchingWords": [
+                        "the",
+                        "capital",
+                        "of",
+                        "india",
+                        "is",
+                        "new",
+                        "delhi"
+                    ],
+                    "contradiction": false,
+                    "status": "HIGH TEXTUAL OVERLAP"
+                }
+            ],
+            "rank": 2
+        },
+        {
+            "model": "Model B",
+            "answer": "Mumbai is the capital of India.",
+            "answerSimilarity": 62.5,
+            "semanticBaseline": 40,
+            "evidenceOverlap": 83.33,
+            "exactMatch": false,
+            "overallScore": 2,
+            "contradictionCount": 1,
+            "insufficientEvidenceCount": 0,
+            "reviewStatus": "CONTRADICTION DETECTED",
+            "claims": [
+                {
+                    "claim": "Mumbai is the capital of India",
+                    "retrievedEvidence": "New Delhi is the capital of India.",
+                    "overlapScore": 83,
+                    "matchingWords": [
+                        "is",
+                        "the",
+                        "capital",
+                        "of",
+                        "india"
+                    ],
+                    "contradiction": true,
+                    "status": "CONTRADICTION DETECTED"
+                }
+            ],
+            "rank": 3
+        }
+    ]
+}

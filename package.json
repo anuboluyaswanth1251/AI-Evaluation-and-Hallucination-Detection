@@ -1,0 +1,21 @@
+
+{
+  "name": "ai-evaluation-project",
+  "version": "1.0.0",
+  "description": "A JavaScript-based AI evaluation and hallucination detection prototype",
+  "main": "src/evaluators/evaluationEngine.js",
+  "scripts": {
+    "test": "powershell -NoProfile -ExecutionPolicy Bypass -File ./run-tests.ps1",
+    "evaluate": "powershell -NoProfile -ExecutionPolicy Bypass -File ./run-evaluation.ps1"
+  },
+  "keywords": [
+    "AI",
+    "evaluation",
+    "hallucination-detection",
+    "JavaScript",
+    "Node.js"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

@@ -1,0 +1,4 @@
+﻿"Rank","Model","Answer","Answer Similarity","Semantic Baseline","Evidence Overlap","Exact Match","Overall Score","Contradictions","Insufficient Evidence","Review Status"
+"1","Model A","New Delhi is the capital of India.","100","100","100","true","100","0","0","HIGH TEXTUAL OVERLAP"
+"2","Model C","The capital city of India is New Delhi.","87.5","80","87.5","false","85.25","0","0","HIGH TEXTUAL OVERLAP"
+"3","Model B","Mumbai is the capital of India.","62.5","40","83.33","false","2","1","0","CONTRADICTION DETECTED"
