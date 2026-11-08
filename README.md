@@ -1,124 +1,95 @@
-
 # AI Evaluation and Hallucination Detection System
 
-## 1. Project Overview
+**Copyright © 2026 ANUBOLU YASWANTH. All Rights Reserved.**
 
-The AI Evaluation and Hallucination Detection System is a JavaScript-based project designed to evaluate AI-generated answers, compare responses, retrieve supporting evidence, and identify potential contradictions.
+## Project Overview
 
-The system uses text similarity, evidence matching, and rule-based verification techniques to analyze AI-generated responses.
+The AI Evaluation and Hallucination Detection System is a JavaScript-based platform designed to evaluate AI-generated responses for accuracy, evidence relevance, claim consistency, and potential hallucinations.
 
-## 2. Project Objectives
+The project focuses on building a systematic evaluation framework to assess the reliability and quality of AI-generated answers.
 
-- Evaluate AI-generated answers.
-- Compare responses from different AI models.
-- Retrieve relevant information from a knowledge base.
-- Identify potential contradictions.
-- Calculate evaluation scores.
-- Generate evaluation reports in JSON and CSV formats.
+## Key Features
 
-## 3. Technologies Used
+- **Answer Evaluation:** Evaluates AI-generated answers against expected information.
+- **Evidence Checking:** Checks whether answers are supported by available evidence.
+- **Claim Verification:** Identifies matching and potentially contradictory claims.
+- **Hallucination Detection:** Flags unsupported or questionable AI-generated statements.
+- **Batch Evaluation:** Evaluates multiple AI-generated responses.
+- **Semantic Evaluation:** Provides a baseline for evaluating semantic similarity.
+- **Automated Testing:** Includes test cases for evaluating system components.
+- **Evaluation Reports:** Generates reports in CSV and JSON formats.
+
+## Technology Stack
 
 - JavaScript
 - Node.js
-- Visual Studio Code
 - JSON
 - CSV
+- Git
+- GitHub
 
-## 4. Main Features
-
-### Answer Evaluation
-Compares an AI-generated answer with a reference answer using text similarity.
-
-### Semantic Baseline
-Provides a basic lexical-overlap baseline for comparing answer content.
-
-### Evidence Retrieval
-Searches a knowledge base and ranks relevant facts using word matching.
-
-### Claim Verification
-Checks individual claims and identifies certain capital-city contradictions using predefined rules.
-
-### Evaluation Engine
-Combines evaluation results using a weighted scoring approach.
-
-### Report Generation
-Generates evaluation reports in JSON and CSV formats.
-
-## 5. Project Structure
+## Project Structure
 
 ```text
 AI-Evaluation-Project/
 │
-├── src/
-│   ├── evaluators/
-│   │   ├── answerEvaluator.js
-│   │   ├── batchEvaluator.js
-│   │   ├── semanticEvaluator.js
-│   │   ├── semanticTest.js
-│   │   └── evaluationEngine.js
-│   │
-│   ├── detectors/
-│   │   ├── evidenceChecker.js
-│   │   ├── claimVerifier.js
-│   │   └── evidenceRetriever.js
-│   │
-│   └── knowledge/
-│       └── knowledgeBase.js
-│
-├── tests/
-├── data/
-├── reports/
+├── LICENSE
+├── COPYRIGHT
+├── README.md
+├── .gitignore
 ├── package.json
-└── README.md
+├── run-tests.ps1
+│
+├── reports/
+│   ├── evaluation-report.csv
+│   └── evaluation-report.json
+│
+├── src/
+│   ├── detectors/
+│   ├── evaluators/
+│   └── knowledge/
+│
+└── tests/
 ```
 
-## 6. Evaluation Methodology
+## Running the Project
 
-The prototype calculates an overall score using:
+1. Install Node.js.
+2. Open the project folder in Visual Studio Code.
+3. Open the integrated terminal.
+4. Run:
 
-- Answer similarity: 40%
-- Semantic baseline: 30%
-- Evidence overlap: 30%
+```bash
+npm install
+```
 
-It also applies penalties for detected contradictions and insufficient evidence.
+5. Run the automated tests:
 
-The final score is restricted to a range of 0 to 100.
+```bash
+node tests/runAllTests.js
+```
 
-## 7. Testing
+## Project Status
 
-The project includes automated tests for:
+The initial evaluation engine, evidence checking, claim verification, batch evaluation, reporting, and automated testing components have been implemented.
 
-- Answer evaluation
-- Claim verification
-- Evidence retrieval
-- Evidence integration
-- Evidence retrieval improvements
-- Evaluation engine
-- Expanded claim verification
+This project is under continued development.
 
-All seven test files passed in the latest complete test run.
+## Copyright and License
 
-## 8. Limitations
+**Copyright © 2026 ANUBOLU YASWANTH. All Rights Reserved.**
 
-- Evidence retrieval currently uses lexical word matching.
-- The semantic evaluator is a basic lexical baseline, not a true embedding-based semantic model.
-- Claim verification uses limited rule-based contradiction detection.
-- Text similarity does not guarantee factual correctness.
-- The evaluation score is a prototype heuristic, not a calibrated probability of accuracy.
-- The current system does not detect every type of AI hallucination.
+This repository is publicly available for portfolio and demonstration purposes.
 
-## 9. Future Enhancements
+The original source code, architecture, evaluation logic, documentation, and associated project materials are protected by applicable copyright law.
 
-- Integrate advanced semantic similarity models.
-- Support larger external knowledge bases.
-- Add more contradiction detection rules.
-- Evaluate responses from real AI APIs.
-- Develop a web-based dashboard.
-- Improve evaluation accuracy using advanced NLP techniques.
+No permission is granted to copy, reproduce, modify, redistribute, sublicense, or commercially exploit the original project materials without prior written permission from the copyright holder, except where applicable law provides otherwise.
 
-## 10. Conclusion
+See the [LICENSE](LICENSE) and [COPYRIGHT](COPYRIGHT) files for details.
 
-The AI Evaluation and Hallucination Detection System demonstrates a basic framework for evaluating AI-generated responses through answer comparison, evidence retrieval, claim verification, and automated reporting.
+Third-party libraries and dependencies remain subject to their respective licenses.
 
-The project provides a foundation for developing more advanced AI evaluation and reliability systems.
+---
 
+**Developed by ANUBOLU YASWANTH**  
+AI Evaluation and Hallucination Detection System | 2026
